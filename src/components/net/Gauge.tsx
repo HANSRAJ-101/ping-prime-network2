@@ -46,13 +46,14 @@ export function Gauge({ value, max = 200, label, unit, active }: Props) {
           const outer = i % 4 === 0 ? 82 : 90;
           const cx = 150;
           const cy = 205;
+          const r = (n: number) => Math.round(n * 1000) / 1000;
           return (
             <line
               key={i}
-              x1={cx + Math.cos(angle) * inner}
-              y1={cy - Math.sin(angle) * inner}
-              x2={cx + Math.cos(angle) * outer}
-              y2={cy - Math.sin(angle) * outer}
+              x1={r(cx + Math.cos(angle) * inner)}
+              y1={r(cy - Math.sin(angle) * inner)}
+              x2={r(cx + Math.cos(angle) * outer)}
+              y2={r(cy - Math.sin(angle) * outer)}
               stroke="var(--border)"
               strokeWidth={i % 4 === 0 ? 3 : 1.5}
             />
