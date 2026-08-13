@@ -101,13 +101,20 @@ function Home() {
       </div>
 
       <footer className="mt-12 space-y-3 text-center text-xs text-muted-foreground">
-        <p>
+        <p className="flex flex-wrap items-center justify-center gap-4">
           <a
             href="mailto:hnsrjsih4@gmail.com"
             className="inline-flex items-center gap-1.5 transition-colors hover:text-primary"
           >
             <span aria-hidden="true">✉</span>
             hnsrjsih4@gmail.com
+          </a>
+          <a
+            href="upi://pay?pa=hindianimeworld@upi&pn=Hansraj%20YT%20Gamer&cu=INR"
+            className="inline-flex items-center gap-1.5 rounded-full border border-primary/40 bg-primary/10 px-3 py-1.5 font-semibold text-primary transition-colors hover:bg-primary/20"
+          >
+            <span aria-hidden="true">❤</span>
+            Donate hindianimeworld@upi
           </a>
         </p>
         <p>
