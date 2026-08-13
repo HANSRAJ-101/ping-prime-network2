@@ -100,9 +100,23 @@ function Home() {
         <DnsBenchmark isp={info.isp} location={location} />
       </div>
 
-      <footer className="mt-12 text-center text-xs text-muted-foreground">
-        Latency is measured over HTTPS round-trips from your browser, so values include TLS and
-        server processing time — treat them as comparative, not raw ICMP ping.
+      <footer className="mt-12 space-y-3 text-center text-xs text-muted-foreground">
+        <p>
+          <a
+            href="mailto:hnsrjsih4@gmail.com"
+            className="inline-flex items-center gap-1.5 transition-colors hover:text-primary"
+          >
+            <span aria-hidden="true">✉</span>
+            hnsrjsih4@gmail.com
+          </a>
+        </p>
+        <p>
+          Latency is measured over HTTPS round-trips from your browser, so values include TLS and
+          server processing time — treat them as comparative, not raw ICMP ping.
+        </p>
+        <p className="text-muted-foreground/70">
+          Copyright © 2026 | Developed by HANSRAJ SINH VAGHELA and PROFESSOR AYAN BHAI
+        </p>
       </footer>
     </main>
   );
