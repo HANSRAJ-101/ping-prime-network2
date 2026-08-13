@@ -24,8 +24,8 @@ export function PingRow({
   name: string;
   region: string;
   ms: number | null | undefined;
-  testing?: boolean;
-  badge?: string;
+  testing?: boolean | undefined;
+  badge?: string | undefined;
 }) {
   const tone = pingTone(ms ?? null);
   const width = ms == null ? 0 : Math.min(100, (ms / 300) * 100);
